@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorteio</title>
+</head>
+<body>
+	<style type="text/css">
+		div{
+			border: 1px solid #aaa;
+			width: 200px;
+			height: 200px;
+			margin: 0 10px;
+			border-radius:  10px;
+			font-size: 80px;
+			text-align:center;
+			padding-top: 40px;
+			color: #aaa;
+			background-color: #aaa;
+
+			}
+
+
+       section{
+            display: flex;
+       }
+		
+	</style>
+
+
+ <section>
+ 	<div id="div1"onmouseover="mostrarNumero1()"></div>
+ 	<div id="div2"onmouseover="mostrarNumero2()"></div>
+ 	<div id="div3"onmouseover="mostrarNumero3()"></div>
+ 	<div id="div4"onmouseover="mostrarNumero4()"></div>
+ 	<div id="div5"onmouseover="mostrarNumero5()"></div>
+ </section>
+
+  <script type="text/javascript">
+  	let div1 = document.querySelector('#div1')
+  	let div2 = document.querySelector('#div2')
+  	let div3 = document.querySelector('#div3')
+  	let div4 = document.querySelector('#div4')
+  	let div5 = document.querySelector('#div5')
+
+  	div1.innerText = Math.round(Math.random() *60);
+  	div2.innerText = Math.round(Math.random() *60);
+  	div3.innerText = Math.round(Math.random() *60);
+  	div4.innerText = Math.round(Math.random() *60);
+  	div5.innerText = Math.round(Math.random() *60);
+
+  	//let mostrarNumero = document.querySelector('div');
+
+   function mostrarNumero1(){
+    div1.style.backgroundColor = 'pink';
+    }
+    function mostrarNumero2(){
+    div1.style.backgroundColor = 'pink';
+    }
+    function mostrarNumero3(){
+    div1.style.backgroundColor = 'pink';
+    }
+    function mostrarNumero4(){
+    div1.style.backgroundColor = 'pink';
+    }
+    function mostrarNumero5(){ = 'pink';
+  
+   }
+
+
+  </script>
+</body>
+</html>
